@@ -1,6 +1,7 @@
 package BY.Oreshko.Serv;
 
 import BY.Oreshko.Serv.dao.UserDao;
+import BY.Oreshko.Serv.util.HashPassword;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,7 +18,7 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         String name = request.getParameter("name");
         String password = request.getParameter("password");
         UserDao daoUser = new UserDao();
-        if (daoUser.isValidUser(name, password)) {
+        if (daoUser.isValidUser(name, HashPassword.getHash(password))) {
             request.getSession().setAttribute("name", name);
             request.getSession().setAttribute("password", password);
             // response.sendRedirect(request.getContextPath()+"/GroupServlet"); //ПЛОХО НЕТ ПАРАМЕТРОВ

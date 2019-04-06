@@ -4,6 +4,7 @@ import BY.Oreshko.Serv.dao.UserDao;
 import BY.Oreshko.Serv.listObject.ListService;
 import BY.Oreshko.Serv.listObject.Person;
 import BY.Oreshko.Serv.model.User;
+import BY.Oreshko.Serv.util.HashPassword;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,9 +20,9 @@ public class RegisterServlet extends HttpServlet {
         String name = request.getParameter("newName");
         String password= request.getParameter("newPassword");
         UserDao daoUser = new UserDao();
-        User user = new User(name,password);
+        User user = new User(name, HashPassword.getHash(password));
         if (daoUser.insertUser(user)) {
-            //request.setAttribute("fullRegister", "Вы зарегистрированы");
+            request.setAttribute("fullRegister", "Вы зарегистрированы");
             request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(
                     request, response);
         }

@@ -3,9 +3,9 @@ package BY.Oreshko.Serv.model;
 public class User {
     private int id;
     private String login;
-    private String passw;
+    private byte[] passw;
 
-    public User(int id, String login, String passw) {
+    public User(int id, String login, byte[] passw) {
         this.id = id;
         this.login = login;
         this.passw = passw;
@@ -14,7 +14,7 @@ public class User {
     public User() {
     }
 
-    public User(String login, String passw) {
+    public User(String login, byte[] passw) {
         this.login = login;
         this.passw = passw;
     }
@@ -25,7 +25,7 @@ public class User {
     public void setLogin(String login) {
         this.login = login;
     }
-    public void setPassw(String passw) {
+    public void setPassw(byte[] passw) {
         this.passw = passw;
     }
     public int getId() {
@@ -34,7 +34,7 @@ public class User {
     public String getLogin() {
         return login;
     }
-    public String getPassw() {
+    public byte[] getPassw() {
         return passw;
     }
     @Override

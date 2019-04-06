@@ -58,11 +58,10 @@
         <form method="POST" action="RegisterServlet">
             <b>Новый пользователь:</b>
             <p> Введите имя <input name="newName" type="text" /></p>
-            <p> Введите пароль <input name="newPassword" type="text" /></p>
+            <p> Введите пароль <input name="newPassword" type="password" /></p>
             <input name="Зарегистрировать" type="submit">
         </form>
         <p><font color="red">${errorRegister}</font></p>
-        <p><font color="blue">${fullRegister}</font></p>
     </div>
     <footer class="footer">
         <div class="container">
