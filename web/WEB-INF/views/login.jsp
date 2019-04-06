@@ -16,6 +16,8 @@
     Name : <input type="text" name="name"/><br/>
     Password : <input type="password" name="password">
     <input type="submit">
+    <br/>
+    <div><a href="RegisterServlet">Регистрация</a></div>
 </form>
 </body>
 </html>
