@@ -20,7 +20,8 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         String pass = request.getParameter("password");
 
     if (checkLogin(name, pass)){
-        request.setAttribute("name", request.getParameter("name"));
+        request.getSession().setAttribute("name", request.getParameter("name"));
+        request.getSession().setAttribute("password", request.getParameter("password"));
         request.getRequestDispatcher("/GroupServlet").forward(request, response);
     } else {
         request.setAttribute("error", "Invalid password and/or login");

@@ -23,6 +23,7 @@ public class GroupListServlet extends HttpServlet {
         if (("".equals(nname))|| ("".equals(nphone)) || ("".equals(nemail))) {
             request.setAttribute("errorMessage", "Заполните все поля");
         } else {
+            if (nname != null && nphone != null && nemail != null)
             ListService.addPerson(new Person(nname, nphone,nemail));
         }
         request.setAttribute("group", ListService.retrieveList());

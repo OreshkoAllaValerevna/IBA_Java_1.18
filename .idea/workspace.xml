@@ -6,7 +6,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02c4f4e6-f407-481d-a588-5cc43849bb98" name="Default" comment="" />
+    <list default="true" id="02c4f4e6-f407-481d-a588-5cc43849bb98" name="Default" comment="lab 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Labs_war_exploded/WEB-INF/classes/BY/Oreshko/Serv/GroupListServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Labs_war_exploded/WEB-INF/classes/BY/Oreshko/Serv/GroupListServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Labs_war_exploded/WEB-INF/classes/BY/Oreshko/Serv/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Labs_war_exploded/WEB-INF/classes/BY/Oreshko/Serv/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Labs_war_exploded/WEB-INF/classes/BY/Oreshko/Serv/filter/LoginRequiredFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Labs_war_exploded/WEB-INF/classes/BY/Oreshko/Serv/filter/LoginRequiredFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Labs_war_exploded/WEB-INF/classes/BY/Oreshko/Serv/filter/PasswordCorrectFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Labs_war_exploded/WEB-INF/classes/BY/Oreshko/Serv/filter/PasswordCorrectFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Labs/BY/Oreshko/Serv/GroupListServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Labs/BY/Oreshko/Serv/GroupListServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Labs/BY/Oreshko/Serv/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Labs/BY/Oreshko/Serv/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Labs/BY/Oreshko/Serv/filter/LoginRequiredFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Labs/BY/Oreshko/Serv/filter/LoginRequiredFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Labs/BY/Oreshko/Serv/filter/PasswordCorrectFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Labs/BY/Oreshko/Serv/filter/PasswordCorrectFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BY/Oreshko/Serv/GroupListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BY/Oreshko/Serv/GroupListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BY/Oreshko/Serv/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BY/Oreshko/Serv/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/LoginRequiredFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/LoginRequiredFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/PasswordCorrectFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/PasswordCorrectFilter.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,33 +28,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="Servlet" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/LogoutServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/welcome.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,20 +46,24 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/Person.java" />
-        <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/listObject/ListService.java" />
-        <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/GroupListServlet.java" />
         <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/listObject/Person.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/PasswordCorrectFilter.java" />
-        <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/LoginRequiredFilter.java" />
         <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/welcome.jsp" />
+        <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/GroupListServlet.java" />
+        <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/LoginRequiredFilter.java" />
+        <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/PasswordCorrectFilter.java" />
+        <option value="$PROJECT_DIR$/src/BY/Oreshko/Serv/LoginServlet.java" />
       </list>
     </option>
   </component>
@@ -75,15 +75,21 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="697" />
     <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,34 +111,23 @@
             <path>
               <item name="Servlet" type="b2602c69:ProjectViewProjectNode" />
               <item name="Labs" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Serv" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Servlet" type="b2602c69:ProjectViewProjectNode" />
               <item name="Labs" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Servlet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Labs" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Servlet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552833076729" />
@@ -142,7 +137,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26206896" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -164,12 +159,14 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -346,16 +343,17 @@
       <workItem from="1552808817950" duration="345000" />
       <workItem from="1552809349378" duration="17706000" />
       <workItem from="1553333201002" duration="629000" />
+      <workItem from="1554533397977" duration="639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35452000" />
+    <option name="totallyTimeSpent" value="38532000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="676" y="0" width="697" height="735" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49335548" visible="true" weight="0.28668684" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49335548" visible="true" weight="0.67189956" />
       <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.16490166" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -365,7 +363,7 @@
       <window_info id="Web" order="7" sideWeight="0.50664455" side_tool="true" weight="0.6703297" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32405892" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32405892" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31914893" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,10 +371,10 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32569557" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32733223" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32569557" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -392,6 +390,46 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
@@ -430,46 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/GroupListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/PasswordCorrectFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/LoginRequiredFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -484,6 +482,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Labs/db.properties" />
+    <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/dao/UserDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/GroupListServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/PasswordCorrectFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BY/Oreshko/Serv/filter/LoginRequiredFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
