@@ -53,7 +53,7 @@
     </div>
 </nav>
 <div class="container">
-    <br><p><font color="red">${error}</font></p>
+    <br><p><font color="red">${errorMessage}</font></p>
     <p><font color="blue">${fullRegister}</font></p>
 <form action="LoginServlet" method="post">
     <br>

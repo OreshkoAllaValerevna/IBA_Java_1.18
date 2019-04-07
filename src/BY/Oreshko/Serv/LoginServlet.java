@@ -5,9 +5,11 @@ import BY.Oreshko.Serv.util.HashPassword;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.time.LocalDateTime;
 
 @WebServlet(urlPatterns = "/LoginServlet")
 public class LoginServlet extends javax.servlet.http.HttpServlet {
@@ -21,6 +23,20 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         if (daoUser.isValidUser(name, HashPassword.getHash(password))) {
             request.getSession().setAttribute("name", name);
             request.getSession().setAttribute("password", password);
+
+            Cookie userCookie = new Cookie(name, LocalDateTime.now().toString());
+            userCookie.setMaxAge(60 * 60 * 24 * 365); //хранить куки год
+            Cookie[] cookies = request.getCookies();
+            if (cookies != null) {
+                for (int i = 0; i < cookies.length; i++) {
+                    Cookie cookie = cookies[i];
+                    if (name.equals(cookie.getName())) {
+                        request.setAttribute("lastdate", cookie.getValue());
+                    }
+                }
+            }
+
+            response.addCookie(userCookie);
             // response.sendRedirect(request.getContextPath()+"/GroupServlet"); //ПЛОХО НЕТ ПАРАМЕТРОВ
                     request
                     .getRequestDispatcher("/GroupServlet")
