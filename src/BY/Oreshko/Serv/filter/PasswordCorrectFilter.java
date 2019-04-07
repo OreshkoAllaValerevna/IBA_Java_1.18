@@ -12,7 +12,7 @@ public class PasswordCorrectFilter implements Filter {
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
         HttpServletRequest request = (HttpServletRequest) req;
-        if ("admin".equals(request.getSession().getAttribute("password"))) {
+        if (request.getSession().getAttribute("password") != null) {
             chain.doFilter(req, resp);
         } else {
             request.getRequestDispatcher("/LoginServlet").forward(req, resp);

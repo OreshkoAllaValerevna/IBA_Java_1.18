@@ -1,8 +1,6 @@
 package BY.Oreshko.Serv;
 
 import BY.Oreshko.Serv.dao.UserDao;
-import BY.Oreshko.Serv.listObject.ListService;
-import BY.Oreshko.Serv.listObject.Person;
 import BY.Oreshko.Serv.model.User;
 import BY.Oreshko.Serv.util.HashPassword;
 

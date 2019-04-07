@@ -1,5 +1,7 @@
 package BY.Oreshko.Serv.listObject;
 
+import BY.Oreshko.Serv.model.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 

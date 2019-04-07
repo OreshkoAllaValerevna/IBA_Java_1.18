@@ -1,7 +1,8 @@
 package BY.Oreshko.Serv;
 
+import BY.Oreshko.Serv.dao.PersonDao;
 import BY.Oreshko.Serv.listObject.ListService;
-import BY.Oreshko.Serv.listObject.Person;
+import BY.Oreshko.Serv.model.Person;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,10 +13,13 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = "/GroupServlet", name = "GroupServlet")
 public class GroupListServlet extends HttpServlet {
+
     private static final long serialVersionUID = 1L;
-    private ListService todoService = new ListService();
+    //private ListService todoService = new ListService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        PersonDao daoPerson = new PersonDao();
 
         String nname = request.getParameter("nname");
         String nphone = request.getParameter("nphone");
@@ -24,15 +28,19 @@ public class GroupListServlet extends HttpServlet {
             request.setAttribute("errorMessage", "Заполните все поля");
         } else {
             if (nname != null && nphone != null && nemail != null)
-            ListService.addPerson(new Person(nname, nphone,nemail));
+            daoPerson.insertPerson(new Person(nname, nphone,nemail));
         }
-        request.setAttribute("group", ListService.retrieveList());
+        request.setAttribute("group", daoPerson.getPersons());
         request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("group", ListService.retrieveList());
+
+        PersonDao daoPerson = new PersonDao();
+
+        request.setAttribute("group", daoPerson.getPersons());
+        daoPerson.closeConnection();
         request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
     }
 }

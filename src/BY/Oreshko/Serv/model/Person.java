@@ -1,9 +1,12 @@
-package BY.Oreshko.Serv.listObject;
+package BY.Oreshko.Serv.model;
 
 public class Person {
     private String name;
     private String phone;
     private String email;
+
+    public Person() {
+    }
 
     public Person(Person person) {
         name = person.name;
