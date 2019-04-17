@@ -1,5 +1,6 @@
 package BY.Oreshko.Serv;
 
+
 import BY.Oreshko.Serv.dao.UserDao;
 import BY.Oreshko.Serv.model.User;
 import BY.Oreshko.Serv.util.HashPassword;
@@ -21,19 +22,19 @@ public class RegisterServlet extends HttpServlet {
         User user = new User(name, HashPassword.getHash(password));
         if (daoUser.insertUser(user)) {
             request.setAttribute("fullRegister", "Вы зарегистрированы");
-            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(
+            request.getRequestDispatcher("/views/login.jsp").forward(
                     request, response);
         }
         else{
             request.setAttribute("errorRegister", "Выберите другое имя, такой пользователь существует");
-                    request.getRequestDispatcher("/WEB-INF/views/register.jsp")
+                    request.getRequestDispatcher("/views/register.jsp")
                             .forward(request, response);
         }
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request
-                .getRequestDispatcher("/WEB-INF/views/register.jsp")
+                .getRequestDispatcher("/views/register.jsp")
                 .forward(request, response);
     }
 }

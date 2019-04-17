@@ -1,7 +1,7 @@
 package BY.Oreshko.Serv;
 
+
 import BY.Oreshko.Serv.dao.PersonDao;
-import BY.Oreshko.Serv.listObject.ListService;
 import BY.Oreshko.Serv.model.Person;
 
 import javax.servlet.ServletException;
@@ -31,7 +31,7 @@ public class GroupListServlet extends HttpServlet {
             daoPerson.insertPerson(new Person(nname, nphone,nemail));
         }
         request.setAttribute("group", daoPerson.getPersons());
-        request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
+        request.getRequestDispatcher("/views/welcome.jsp").forward(request, response);
 
     }
 
@@ -41,6 +41,6 @@ public class GroupListServlet extends HttpServlet {
 
         request.setAttribute("group", daoPerson.getPersons());
         daoPerson.closeConnection();
-        request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
+        request.getRequestDispatcher("/views/welcome.jsp").forward(request, response);
     }
 }

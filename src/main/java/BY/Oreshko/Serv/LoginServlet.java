@@ -1,13 +1,11 @@
 package BY.Oreshko.Serv;
 
+
 import BY.Oreshko.Serv.dao.UserDao;
 import BY.Oreshko.Serv.util.HashPassword;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
@@ -43,7 +41,7 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                     .forward(request, response);
         } else {
             request.setAttribute("errorMessage", "Неверный логин или пароль!!");
-            request.getRequestDispatcher("/WEB-INF/views/login.jsp")
+            request.getRequestDispatcher("/views/login.jsp")
                     .forward(request, response);
         }
     }
@@ -51,7 +49,7 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                          javax.servlet.http.HttpServletResponse response)
             throws javax.servlet.ServletException, IOException {
         request
-                .getRequestDispatcher("/WEB-INF/views/login.jsp")
+                .getRequestDispatcher("/views/login.jsp")
                 .forward(request, response);
     }
 }
