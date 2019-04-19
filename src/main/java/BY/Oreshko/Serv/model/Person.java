@@ -1,6 +1,9 @@
 package BY.Oreshko.Serv.model;
 
+import java.util.Objects;
+
 public class Person {
+    private int id;
     private String name;
     private String phone;
     private String email;
@@ -18,6 +21,21 @@ public class Person {
         this.name = name;
         this.phone = phone;
         this.email = email;
+    }
+
+    public Person(int id, String name, String phone, String email) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -51,5 +69,21 @@ public class Person {
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return id == person.id &&
+                Objects.equals(name, person.name) &&
+                Objects.equals(phone, person.phone) &&
+                Objects.equals(email, person.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, phone, email);
     }
 }
