@@ -1,8 +1,9 @@
 package BY.Oreshko.Serv.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Person {
+public class Person implements Serializable{
     private int id;
     private String name;
     private String phone;
@@ -15,12 +16,14 @@ public class Person {
         name = person.name;
         phone = person.phone;
         email = person.email;
+        id = person.id;
     }
 
     public Person(String name, String phone, String email) {
         this.name = name;
         this.phone = phone;
         this.email = email;
+        this.id = 0;
     }
 
     public Person(int id, String name, String phone, String email) {
@@ -65,7 +68,8 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 '}';
@@ -76,14 +80,14 @@ public class Person {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
-        return id == person.id &&
-                Objects.equals(name, person.name) &&
-                Objects.equals(phone, person.phone) &&
-                Objects.equals(email, person.email);
+        return Objects.equals(getEmail(), person.getEmail()) &&
+                Objects.equals(getPhone(), person.getPhone()) &&
+                Objects.equals(getName(), person.getName()) &&
+                Objects.equals(getId(), person.getId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, phone, email);
+        return Objects.hash(getId(), getEmail(), getPhone(), getName());
     }
 }

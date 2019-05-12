@@ -16,7 +16,7 @@ import static org.mockito.Mockito.*;
 import static org.mockito.MockitoAnnotations.initMocks;
 
 public class ControllerTest {
-    private static LoginServlet loginServlet;
+    /*private static LoginServlet loginServlet;
     private static HttpServletRequest request;
     private static HttpServletResponse response;
     private static RequestDispatcher requestDispatcher;
@@ -39,5 +39,5 @@ public class ControllerTest {
         // Assert
         verify(request).setAttribute("errorMessage", "Неверный логин или пароль, заполните все поля");
                 verify(requestDispatcher).forward(request, response);
-    }
+    }*/
 }

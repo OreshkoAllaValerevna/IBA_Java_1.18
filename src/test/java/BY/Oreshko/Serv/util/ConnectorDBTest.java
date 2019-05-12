@@ -9,12 +9,12 @@ import java.sql.SQLException;
 
 public class ConnectorDBTest {
     // это плохой тест - он использует зависимые объекты
-    @Test
+    /*@Test
     public void testGetConnection() throws SQLException {
         //give
         Connection connection = ConnectorDB.getConnection();
         //when
         //then
         Assert.assertNotNull(connection);
-    }
+    }*/
 }

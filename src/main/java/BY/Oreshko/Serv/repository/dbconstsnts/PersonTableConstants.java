@@ -2,7 +2,7 @@ package BY.Oreshko.Serv.repository.dbconstsnts;
 
 public enum PersonTableConstants {
     ID("id"),
-    NAME("namel"),
+    NAME("name1"),
     PHONE("phone"),
     EMAIL ("email");
     private String fieldName;

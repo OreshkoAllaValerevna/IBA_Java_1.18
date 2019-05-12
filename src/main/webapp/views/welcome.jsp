@@ -45,10 +45,10 @@
             <li class="active"><a href="#">Home</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="LoginServlet">Login</a></li>
+            <li><a href="${pageContext.servletContext.contextPath}/controller?command=login_page">Login</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="LogoutServlet">Logout</a></li>
+            <li><a href="${pageContext.servletContext.contextPath}/controller?command=sign_out">Logout</a></li>
         </ul>
     </div>
 </nav>
@@ -71,7 +71,7 @@
         </c:forEach>
     </table>
     <p><font color="red">${errorMessage}</font></p>
-    <form method="POST" action="GroupServlet">
+    <form method="POST" action="${pageContext.servletContext.contextPath}/controller?command=add_new_person">
     <b>Новый:</b>
         <p> Введите имя <input name="nname" type="text" /></p>
         <p> Введите телефон <input name="nphone" type="text" /></p>
@@ -82,6 +82,7 @@
         <fmt:formatDate value="${beanNow}" var="s_now" pattern="yyyy.MMM.dd hh:mm:ss" />
         <c:out value="${s_now}" /></p>
 </div>
+    <p> ${lastdate}</p>
 <footer class="footer">
     <div class="container">
         <p>2019 Все права защищены</p>

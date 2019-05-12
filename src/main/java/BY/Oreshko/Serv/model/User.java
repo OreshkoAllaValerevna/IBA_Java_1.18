@@ -1,9 +1,10 @@
 package BY.Oreshko.Serv.model;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class User {
+public class User implements Serializable {
     private int id;
     private String login;
     private byte[] passw;
@@ -18,6 +19,7 @@ public class User {
     }
 
     public User(String login, byte[] passw) {
+        this.id = 0;
         this.login = login;
         this.passw = passw;
     }
@@ -51,18 +53,19 @@ public class User {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         User user = (User) o;
-        return id == user.id &&
-                Objects.equals(login, user.login) &&
-                Arrays.equals(passw, user.passw);
+        return Objects.equals(getId(), user.getId()) &&
+                Objects.equals(getLogin(), user.getLogin()) &&
+                Objects.equals(getPassw(), user.getPassw());
     }
-
     @Override
     public int hashCode() {
-        int result = Objects.hash(id, login);
-        result = 31 * result + Arrays.hashCode(passw);
-        return result;
+        return Objects.hash(getLogin(), getPassw(), getId());
     }
 }

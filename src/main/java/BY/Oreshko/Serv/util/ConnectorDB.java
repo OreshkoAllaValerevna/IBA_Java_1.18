@@ -12,7 +12,7 @@ import java.util.ResourceBundle;
 
 public class ConnectorDB
 {
-    private static final Logger LOGGER = Logger.getLogger(ConnectorDB.class);
+    /*private static final Logger LOGGER = Logger.getLogger(ConnectorDB.class);
 
     public static Connection getConnection() throws SQLException {
         ResourceBundle resource = ResourceBundle.getBundle("db",
@@ -32,5 +32,5 @@ public class ConnectorDB
         LOGGER.info("connection establish");
 
         return DriverManager.getConnection(url, user, pass);
-    }
+    }*/
 }

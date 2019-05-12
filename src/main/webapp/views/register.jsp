@@ -45,17 +45,17 @@
             <li class="active"><a href="#">Home</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="LoginServlet">Login</a></li>
+            <li><a href="${pageContext.servletContext.contextPath}/controller?command=login_page">Login</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="LogoutServlet">Logout</a></li>
+            <li><a href="${pageContext.servletContext.contextPath}/controller?command=sign_out">Logout</a></li>
         </ul>
     </div>
 </nav>
 <div class="container">
     <h3>Registration</h3>
     <div>
-        <form method="POST" action="RegisterServlet">
+        <form method="POST" action="${pageContext.servletContext.contextPath}/controller?command=register_new_user">
             <b>Новый пользователь:</b>
             <p> Введите имя <input name="newName" type="text" /></p>
             <p> Введите пароль <input name="newPassword" type="password" /></p>
